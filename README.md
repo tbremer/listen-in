@@ -11,6 +11,12 @@ listen-in is a simple to use, Promise based, STDIN listener for node application
 
 listen-in was written because I wanted a way to pass secure information into Node applications with out adding `EXPORT` or configuration files to my user profile.
 
+## Options
+
+- `envToken [String]`: add value to `process.env` under this name. (_default `null`_)
+- `message [String]`: Message to prompt user with. (_default `null`_)
+- `insecure [Boolean]`: Passes user input into the `then`.
+
 ## Basic Use
 
 ```javascript
@@ -33,7 +39,7 @@ import lstn from 'listen-in';
 const config = async () => ({
   dbName: 'production',
   dbUser: 'username',
-  dbPassword: await listn({ insecure: true, message: 'Database Password: ' })
+  dbPassword: await lstn({ insecure: true, message: 'Database Password: ' })
 });
 ```
 ## Use for updating `process.env`:
@@ -49,9 +55,3 @@ function getConfigs() {
   }));
 }
 ```
-
-## Options
-
-- `envToken [String]`: add value to `process.env` under this name. (_default `null`_)
-- `message [String]`: Message to prompt user with. (_default `null`_)
-- `insecure [Boolean]`: Passes user input into the `then`.
