@@ -1,6 +1,6 @@
 {
   "name": "listen-in",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Promise based STDIN listener for node applications",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,12 @@
     "test": "mocha  --reporter nyan",
     "test:watch": "mocha  --watch --reporter min"
   },
-  "engines": { "node": ">=4.0.0" },
-  "keywords": ["stdin"],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "stdin"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
