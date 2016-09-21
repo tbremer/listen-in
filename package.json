@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Promise based STDIN listener for node applications",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "pretest": "eslint ./",
     "test": "mocha  --reporter nyan",
@@ -11,11 +14,24 @@
   "engines": {
     "node": ">=4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbremer/listen-in.git"
+  },
   "keywords": [
-    "stdin"
+    "stdin",
+    "user input"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Tom Bremer",
+    "email": "tom@tbremer.com",
+    "url": "http://tbremer.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbremer/listen-in/issues"
+  },
+  "homepage": "https://github.com/tbremer/listen-in#readme",
   "devDependencies": {
     "eslint": "^3.5.0",
     "expect": "^1.20.2",
