@@ -1,0 +1,21 @@
+{
+  "name": "listen-in",
+  "version": "0.0.0",
+  "description": "Promise based STDIN listener for node applications",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint ./",
+    "test": "mocha  --reporter nyan",
+    "test:watch": "mocha  --watch --reporter min"
+  },
+  "engines": { "node": ">=4.0.0" },
+  "keywords": ["stdin"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2",
+    "mock-stdin": "^0.3.0"
+  }
+}
