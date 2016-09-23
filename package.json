@@ -8,7 +8,7 @@
   },
   "scripts": {
     "pretest": "eslint ./",
-    "test": "mocha  --reporter nyan",
+    "test": "mocha",
     "test:watch": "mocha  --watch --reporter min"
   },
   "engines": {
